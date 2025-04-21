@@ -6,7 +6,7 @@ This is a Safelyx's browser extension built using [Deno](https://deno.land).
 
 ## Supported Browsers
 
-- Firefox ([AMO](#link-coming-soon))
+- Firefox ([AMO](https://addons.mozilla.org/en-GB/firefox/addon/safelyx/))
 - Chrome/Brave/Vivaldi (coming soon)
 - Safari (coming soon)
 
@@ -30,6 +30,7 @@ $ make build
 ## Structure
 
 - Static files are defined at `public/`.
+- Bundling happens via `bundle.ts`.
 
 ## Deployment / Publishing
 

@@ -6,7 +6,7 @@
     "indentWidth": 2,
     "singleQuote": true,
     "proseWrap": "preserve",
-    "exclude": ["./dist"]
+    "exclude": ["./dist", "./public/css/tailwind.css"]
   },
   "compilerOptions": {
     "lib": [
@@ -24,7 +24,7 @@
         "no-unused-vars"
       ]
     },
-    "exclude": ["./dist"]
+    "exclude": ["./dist", "./public/css/tailwind.css"]
   },
   "test": {
     "exclude": ["./dist"]
