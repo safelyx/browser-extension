@@ -6,12 +6,6 @@ export interface Browser {
       title: string;
       contexts: ContextType[];
       targetUrlPatterns?: string[];
-      icons?: {
-        '16': string;
-        '32': string;
-        '48': string;
-        '128': string;
-      };
     }) => void;
     removeAll: (callback: () => void) => void;
     onClicked: {
@@ -34,12 +28,12 @@ export interface Browser {
   };
 }
 
-/** Reference: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/ContextType */
+/** Reference: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/ContextType && https://developer.chrome.com/docs/extensions/reference/api/contextMenus */
 type ContextType =
   | 'all'
   | 'action'
   | 'audio'
-  | 'bookmark'
+  // | 'bookmark' // Firefox only
   | 'browser_action'
   | 'editable'
   | 'frame'
@@ -49,7 +43,7 @@ type ContextType =
   | 'page_action'
   | 'password'
   | 'selection'
-  | 'tab'
+  // | 'tab' // Firefox only
   | 'tools_menu'
   | 'video';
 

@@ -7,7 +7,7 @@ This is a Safelyx's browser extension built using [Deno](https://deno.land).
 ## Supported Browsers
 
 - Firefox ([AMO](https://addons.mozilla.org/en-GB/firefox/addon/safelyx/))
-- Chrome/Brave/Vivaldi (coming soon)
+- Chrome/Brave/Vivaldi (link coming soon)
 - Safari (coming soon)
 
 ## Requirements

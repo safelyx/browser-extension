@@ -1,5 +1,15 @@
 import { Browser, OnClickData } from './types.ts';
 
+declare namespace globalThis {
+  const chrome: Browser;
+  const browser: Browser;
+}
+
+if (typeof globalThis.browser === 'undefined') {
+  // @ts-expect-error this is a hack to make the same code work in both Chrome and Firefox
+  globalThis.browser = globalThis.chrome;
+}
+
 declare const browser: Browser;
 
 const MENU_ITEM_ID = 'check-in-safelyx';
@@ -33,13 +43,7 @@ browser.contextMenus.removeAll(function () {
   browser.contextMenus.create({
     id: MENU_ITEM_ID,
     title: 'Check in Safelyx',
-    contexts: ['bookmark', 'image', 'link', 'tab'],
-    icons: {
-      '16': 'images/favicon.png',
-      '32': 'images/favicon.png',
-      '48': 'images/favicon.png',
-      '128': 'images/favicon.png',
-    },
+    contexts: ['image', 'link'],
   });
 });
 
