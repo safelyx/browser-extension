@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900;
+  }
+
+  h1 {
+    @apply text-cyan-600;
+  }
+
+  h2 {
+    @apply text-cyan-500;
+  }
+
+  h3 {
+    @apply text-cyan-400;
+  }
+
+  h4 {
+    @apply text-cyan-400;
+  }
+}
+
+@layer components {
+  .page {
+    @apply w-full mx-0 px-8 py-8 my-0 min-h-screen lg:max-w-4xl lg:mx-auto;
+  }
+
+  .notification {
+    @apply max-w-lg mx-auto;
+  }
+
+  .notification article p {
+    @apply mb-2 leading-5;
+  }
+}

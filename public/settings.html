@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Safelyx</title>
+
+    <link rel="stylesheet" href="/bundle.css">
+    <script src="/settings.bundle.js" defer></script>
+  </head>
+
+  <body class="bg-gray-900">
+    <section class="page">
+      <main class="mx-auto max-w-xl">
+        <section class="relative px-6 pt-12 lg:px-8 lg:text-center">
+          <section class="mx-auto max-w-xl text-center">
+            <a href="https://safelyx.com/pricing" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/logo-white.svg"
+                alt="Logo: Stylized shield with word 'Safelyx'"
+                class="w-64 mx-auto"
+                title="Safelyx"
+              >
+            </a>
+          </section>
+        </section>
+
+        <section class="relative px-6 pt-12 lg:px-8 lg:text-center">
+          <section class="mx-auto max-w-xl">
+            <h1 class="text-pretty text-2xl font-semibold tracking-tight text-white sm:text-5xl">Settings</h1>
+            <p class="mt-6 text-lg/8 text-gray-300">
+              Define your <a
+                href="https://safelyx.com/pricing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-500 hover:text-cyan-400"
+              >key code</a> to avoid hitting limits.
+            </p>
+          </section>
+        </section>
+
+        <form id="settings-form" action="#">
+          <fieldset class="mx-auto lg:flex flex-row gap-x-4 mt-2 justify-center align-middle max-w-2xl">
+            <section class="flex-auto">
+              <label for="key_code" class="sr-only">Key Code</label>
+              <input
+                type="password"
+                name="key_code"
+                id="key_code"
+                autocomplete="off"
+                placeholder="Key Code"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-500"
+                value=""
+              >
+            </section>
+            <section class="mt-6 lg:mt-0">
+              <button
+                type="submit"
+                class="rounded-md bg-cyan-500 px-3.5 py-2.5 text-center text-sm font-semibold text-gray-900 shadow-sm hover:bg-cyan-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
+              >
+                Save
+              </button>
+            </section>
+          </fieldset>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
