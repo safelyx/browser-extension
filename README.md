@@ -6,9 +6,8 @@ This is a Safelyx's browser extension built using [Deno](https://deno.land).
 
 ## Supported Browsers
 
-- Firefox ([AMO](https://addons.mozilla.org/en-GB/firefox/addon/safelyx/))
-- Chrome/Brave/Vivaldi (link coming soon)
-- Safari (coming soon)
+- Firefox ([Firefox Store](https://addons.mozilla.org/en-GB/firefox/addon/safelyx/))
+- Chrome/Brave/Edge/Vivaldi ([Chrome Web Store](https://chromewebstore.google.com/detail/safelyx/kmfggdibapdceeoacmomidbolmlijhgo))
 
 ## Requirements
 
@@ -34,4 +33,4 @@ $ make build
 
 ## Deployment / Publishing
 
-- Push to the `main` branch with the new versions, then manually upload the result of `make build` to [AMO](https://addons.mozilla.org/en-GB/developers/addon/submit/distribution).
+- Push to the `main` branch with the new versions, then manually upload the result of `make build` to [AMO](https://addons.mozilla.org/en-GB/developers/addons) and [CWS](https://chrome.google.com/webstore/devconsole).
