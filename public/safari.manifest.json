@@ -16,8 +16,7 @@
   "permissions": ["contextMenus", "storage"],
 
   "background": {
-    "service_worker": "background.bundle.js",
-    "type": "module"
+    "service_worker": "background.bundle.js"
   },
 
   "action": {

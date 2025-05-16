@@ -8,6 +8,7 @@ This is a Safelyx's browser extension built using [Deno](https://deno.land).
 
 - Firefox ([Firefox Store](https://addons.mozilla.org/en-GB/firefox/addon/safelyx/))
 - Chrome/Brave/Edge/Vivaldi ([Chrome Web Store](https://chromewebstore.google.com/detail/safelyx/kmfggdibapdceeoacmomidbolmlijhgo))
+- Safari ([Download unsigned app from releases](https://github.com/safelyx/browser-extension/releases))
 
 ## Requirements
 
@@ -34,3 +35,4 @@ $ make build
 ## Deployment / Publishing
 
 - Push to the `main` branch with the new versions, then manually upload the result of `make build` to [AMO](https://addons.mozilla.org/en-GB/developers/addons) and [CWS](https://chrome.google.com/webstore/devconsole).
+- Safari is manually archived and uploaded to the releases page.
